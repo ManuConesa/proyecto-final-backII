@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-service
+  zipkin:
+    enabled: true
+    baseUrl: http://zipkin:9411
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ManuConesa/proyecto-final-backII
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
